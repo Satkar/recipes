@@ -1,0 +1,39 @@
+<div class="container-fluid bg-3 margin-right-20-percent margin-left-20-percent margin-bottom-40 min-height-500">
+    <% unless @recipe.present? %>
+      <% flash.each do |type, msg| %>
+         <div class="col-sm-12 col-md-12 col-lg-12 notification-error text-center" >
+            <%= msg %>
+        </div>
+      <% end %>
+    <% else %>
+      <div class="row margin-top-30 margin-left-50 white-bg recipe-alignment">
+        <% if @fields.include?(:photo) %>
+          <div class="col-sm-12 col-md-12 col-lg-12  image-adjustment">
+            <img src="https:<%= @recipe.photo.url%>" width="100%">
+          </div>
+        <% end %>
+        <% if @fields.include?(:title)%>
+          <div class="col-md-12 show-adjustment">
+            <h2>
+              <%= @recipe.title %>
+            </h2>
+          </div>
+        <% end %>
+        <% if @fields.include?(:tags)%>
+          <div class="col-md-12 tag-format margin-bottom-10" >
+            <% @recipe.tags.map(&:name).each do |tag| %>
+              <span>
+                <%= tag %>
+              </span>
+            <% end %>
+          </div>
+        <% end %>
+        <% if @fields.include?(:description)%>
+          <div class='col-md-12 show-adjustment margin-bottom-10'>
+            <%= @recipe.description %>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+  
+</div>

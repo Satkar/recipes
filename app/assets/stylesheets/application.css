@@ -13,3 +13,144 @@
  *= require_tree .
  *= require_self
  */
+ body {
+  font: 20px Montserrat, sans-serif;
+  line-height: 1.8;
+  color: #f5f6f7;
+  background-color: #f6f6f6;
+}
+
+p {font-size: 16px;}
+
+.margin {margin-bottom: 45px;}
+
+.bg-3 { 
+  background-color: #f6f6f6;
+  color: #555555;
+}
+
+.bg-4 { 
+  background-color: #2f2f2f; /* Black Gray */
+  color: #fff;
+}
+
+.navbar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  letter-spacing: 5px;
+  background-color: #1abc9c; /* Green */
+  color: black !important;
+}
+
+.margin-top-30 {
+    margin-top: 30px;
+}
+
+.navbar-nav  li a{
+  color: #092de6 !important;
+}
+
+.blue-color a{
+    color: #092de6 !important;
+}
+
+.margin-left-5-percent {
+  margin-left: 5%;
+}
+
+.margin-right-5-percent {
+  margin-right: 5%;
+}
+
+.white-bg {
+    background-color: white;
+}
+
+.margin-left-50{
+    margin-left: 50px;
+}
+
+.margin-top-10 {
+  margin-top: 10px;
+}
+
+.margin-bottom-10 {
+  margin-bottom: 10px;
+}
+
+.margin-bottom-40 {
+  margin-bottom: 40px;
+}
+
+.recipe-alignment {
+  border-radius: 10px;
+  min-height: 350px;
+}
+
+.tag-format span{
+  background-color: #999;
+  color:black;
+  display: inline;
+  font-size: 10px;
+  font-family: "Avenir Next Cyr W00 Demi",Arial,sans-serif;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  padding: 5px;
+  text-transform: uppercase;
+  margin: 0 5px 5px 0;
+
+}
+.margin-left-15-percent {
+    margin-left: 15%;
+}
+.recipe-alignment a img{
+  padding: 15px;
+}
+
+.title-adjustment {
+  margin-left:10px;
+  margin-right:10px;
+}
+
+.title-adjustment {
+  font-size: initial;
+}
+
+.margin-right-20-percent{
+  margin-right: 20%;
+}
+
+.show-adjustment {
+    font-size: 16px;
+}
+
+.show-adjustment h2{
+    font-size: 25px;
+}
+
+.image-adjustment img{
+    padding-top: 15px
+}
+
+.margin-left-20-percent{
+  margin-left: 20%;
+}
+
+.min-height-500 {
+  min-height: 500px;
+}
+
+.notification-error {
+  margin-top: 106px;
+  background-color: #e20d0d;
+  color: white;
+  text-decoration: none;
+  padding: 15px 26px;
+  position: relative;
+  display: inline-block;
+  border-radius: 2px;
+}
